@@ -115,11 +115,11 @@ function App() {
     <FullFeatureList searchFieldLabel="Movie Search" searchText={ searchText } updateSearchField={ updateSearchField }>
       {
         movieList.length ? (
-          <ul className="flex flex-col items-center">
+          <ul className="flex flex-wrap justify-center items-center mt-5">
             {
               movieList.map((movie, movieIndex) =>
                 // TODO: Create movie card component
-                <li key={movie.imdbID} className="shadow-lg border mb-4 relative">
+                <li key={movie.imdbID} className="shadow-lg border mb-4 mx-2 relative">
                   <img src={movie.Poster} alt="movie-poster" />
                   {/* TODO: Make button component */}
                   <button value={movieIndex} onClick={handleAddMovieClick} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded absolute top-2 right-2 opacity-80">
