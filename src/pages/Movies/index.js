@@ -12,7 +12,7 @@ function App() {
   const [movieList, setMovieList] = useState([]);
   const [fetchError, setFetchError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [page, setPage] = useState(1);
+  const [page] = useState(1);
   const [selectedMovie, setSelectedMovie] = useState(null);
   const [confirmationStep, setConfirmationStep] = useState(1);
   const [movieListIsOpen, setMovieListIsOpen] = useState(false);
